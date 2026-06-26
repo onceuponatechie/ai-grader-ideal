@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,4 +6,14 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+::selection {
+  background-color: rgb(165 243 252); /* cyan-200 */
+  color: rgb(8 51 68); /* cyan-950 */
 }
